@@ -7,4 +7,8 @@ OBJ_NAME = play
 COMPILER_FLAGS = -std=c++17 -Wall -O0 -g
 
 all:
-	$(CC) $(COMPILER_FLAGS) $(SRS_FILES) -o $(BUILD_DIR)/$(OBJ_NAME) -I src/include -L src/lib -lmingw32 -lSDL2main -lSDL2 -lSDL2_image
+	$(CC) $(COMPILER_FLAGS) $(SRS_FILES) -o $(BUILD_DIR)/$(OBJ_NAME) -I src/include -L src/lib -lmingw32 -lSDL2main -lSDL2 -lSDL2_ttf
+
+
+
+#$(CC) $(COMPILER_FLAGS) $(SRS_FILES) -o $(BUILD_DIR)/$(OBJ_NAME) -I src/include -L src/lib -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_ttf
